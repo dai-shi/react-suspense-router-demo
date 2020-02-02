@@ -8744,21 +8744,21 @@ react-suspense-fetch@^0.1.1:
   resolved "https://registry.yarnpkg.com/react-suspense-fetch/-/react-suspense-fetch-0.1.1.tgz#942624f33f511fd7a319bcd9456b99934249e538"
   integrity sha512-peCC3GYOUrQvPqLktctch1pijW2pXlkWjaSG4k1GYR9Gz90AkiFGTGZ0EG1GH8gqjGODfA13rQcmD+JSX6LSeg==
 
-react-suspense-router@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/react-suspense-router/-/react-suspense-router-0.3.1.tgz#827c50bcbcfac0ccb7041bdeb87d5b8c29f86130"
-  integrity sha512-Z7VFfGgALuuko+Iak81g1Qu4GHnorFMWivztBPDzUJXclv5pIcdQo+oC9UtXtB6Tf/i1orNSXehUArLySs1McA==
+react-suspense-router@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/react-suspense-router/-/react-suspense-router-0.4.0.tgz#2395e265aa476f90e3fd086cbcac889836eb3f2e"
+  integrity sha512-YbtiaOpKH6h9Pd+q5MOJ/xEXNubrCk9w5CbfSY12pNfVPfsCZm8Bt6G56go0Xbh95AJ0gB07qfMt8g+wxMqXpA==
   dependencies:
     history "^5.0.0-beta.4"
     react-router "^6.0.0-alpha.1"
     react-router-dom "^6.0.0-alpha.1"
     react-suspense-fetch "^0.1.1"
-    react-tracked "^1.0.3"
+    react-tracked "^1.0.4"
 
-react-tracked@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/react-tracked/-/react-tracked-1.0.3.tgz#764023fc4ff0727d94a2fec996d9af8cf41db7e8"
-  integrity sha512-QtjQ8TMMLsSAAwDL1UIuOJ2+LVbmfP9/GlSwWiGstr/pcuOe4QYRO/KuJqBNY+aITGqKcBFZYUg+eA5We2Fcvg==
+react-tracked@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/react-tracked/-/react-tracked-1.0.4.tgz#37812ec8080e81516f68b68b5b0617328e10c7bb"
+  integrity sha512-AgnxYytgIEXlsfafeR9GQ2dBYBbvpQSP7ZKMuEhBQ6jYMBsJhGH9xBZPUSvHDVg2G39DfAcUmCna/4MOkzP5mg==
 
 react@^0.0.0-experimental-241c4467e:
   version "0.0.0-experimental-241c4467e"
