@@ -53,6 +53,9 @@ const Nav: React.FC = () => (
       <Link to="/about">
         <NavItem>About</NavItem>
       </Link>
+      <Link to="/github/react">
+        <NavItem>GitHub react</NavItem>
+      </Link>
       <Link to="/user/1">
         <NavItem>User 1</NavItem>
       </Link>
