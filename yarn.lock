@@ -8643,7 +8643,7 @@ react-dev-utils@^10.0.0:
     strip-ansi "5.2.0"
     text-table "0.2.0"
 
-react-dom@^0.0.0-experimental-241c4467e:
+react-dom@experimental:
   version "0.0.0-experimental-241c4467e"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-0.0.0-experimental-241c4467e.tgz#9ad0f0971e6c2a00f9e2d982df396d91646866ef"
   integrity sha512-8//fSgwwhxuq30fq0e9DRGxlvhNwMKr6JYbTphQHntqf2ABc76AlxWHGhKaCsTe6P5DtZqzYC2bEFv4pxrIOHw==
@@ -8744,10 +8744,10 @@ react-suspense-fetch@^0.1.1:
   resolved "https://registry.yarnpkg.com/react-suspense-fetch/-/react-suspense-fetch-0.1.1.tgz#942624f33f511fd7a319bcd9456b99934249e538"
   integrity sha512-peCC3GYOUrQvPqLktctch1pijW2pXlkWjaSG4k1GYR9Gz90AkiFGTGZ0EG1GH8gqjGODfA13rQcmD+JSX6LSeg==
 
-react-suspense-router@^0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/react-suspense-router/-/react-suspense-router-0.5.1.tgz#ea0472c6b5e6f7470052c2c7559f200c3b84578d"
-  integrity sha512-LoSSv5oZeE9rOHuuvzOM+xtGkVmI+V4+3omQ/GN+cNVceNNrK7FWE97+l2Mn3Vtc9kx6nEX7DY1s1MVpMsSh2g==
+react-suspense-router@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/react-suspense-router/-/react-suspense-router-0.6.0.tgz#081a35dbd186b1543cee513ec858b8ed8cbc5a81"
+  integrity sha512-/ugwlCzRBR3Mv5O/s47MaEzH3hVb+fD7HWY/jNM2vpkgCT2jwx3+4xMURRo3mS5dK+s8WpRzYnvrhQBF3U3kxQ==
   dependencies:
     history "^5.0.0-beta.4"
     react-router "^6.0.0-alpha.1"
@@ -8760,7 +8760,7 @@ react-tracked@^1.0.5:
   resolved "https://registry.yarnpkg.com/react-tracked/-/react-tracked-1.0.5.tgz#f4d31ee31f39ec20ffbc9ac68598e5ce4efa6a9b"
   integrity sha512-LItifsI0xuIoT14N15x8XGWS3q1U129P+jqx8i/MjpqDedU80jzk+m2kNjrk9cUpP/5eOhGToImJxhFwuZlj4g==
 
-react@^0.0.0-experimental-241c4467e:
+react@experimental:
   version "0.0.0-experimental-241c4467e"
   resolved "https://registry.yarnpkg.com/react/-/react-0.0.0-experimental-241c4467e.tgz#08b4213aaada61b0eac7d10a7cc947cb9a150b36"
   integrity sha512-aLS3k3Y/HVGE3dg/csk1XYXiOx6U4nE8EoVZMz7gIk/esopM888c+6jgNNHcC0U+5rNddLFUbHtEAFGl/qJS4Q==
