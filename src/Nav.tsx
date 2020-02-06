@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link, useSuspensePending } from "react-suspense-router";
+import { Link, usePending } from "react-suspense-router";
 
 const NavList = styled.ul`
   list-style-type: none;
@@ -36,7 +36,7 @@ const NavLoader = styled.div`
 `;
 
 const NavPending: React.FC = () => {
-  const isPending = useSuspensePending();
+  const isPending = usePending();
   if (isPending) {
     return <NavLoader />;
   }
