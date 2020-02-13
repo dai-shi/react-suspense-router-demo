@@ -14,7 +14,7 @@
     "react": "experimental",
     "react-dom": "experimental",
     "react-scripts": "3.3.1",
-    "react-suspense-router": "^1.0.0-alpha.3",
+    "react-suspense-router": "^1.0.0-alpha.6",
     "styled-components": "^5.0.1",
     "typescript": "~3.7.5"
   },
