@@ -1,5 +1,5 @@
 import React from "react";
-import { useRouteData } from "react-suspense-router";
+import { useRouteData, Link } from "react-suspense-router";
 
 import { UserData } from "./User.data";
 
@@ -13,6 +13,9 @@ const User: React.FC = () => {
         <li>First Name: {userData.data.first_name}</li>
         <li>Last Name: {userData.data.last_name}</li>
       </ul>
+      <Link to="/user/-1">
+        Go to Page that raises an error (User ID: -1)
+      </Link>
     </div>
   );
 };

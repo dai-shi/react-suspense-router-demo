@@ -1,7 +1,8 @@
 import React, { Suspense } from "react";
 import styled from "styled-components";
-import { BrowserRouter } from "react-suspense-router";
+import { BrowserRouter, useNavigate } from "react-suspense-router";
 
+import { ErrorBoundary } from "./utils/ErrorBoundary";
 import Nav from "./Nav";
 import MyRoutes from "./MyRoutes";
 
@@ -22,7 +23,7 @@ const AppLoader = styled.div`
   justify-content: center;
   align-items: center;
   &::after {
-    content: '';
+    content: "";
     border: 4px dotted white;
     width: 40px;
     height: 40px;
@@ -30,18 +31,42 @@ const AppLoader = styled.div`
     animation: spinner 3s infinite linear;
   }
   @keyframes spinner {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 `;
+
+const Fallback: React.FC<{ retry?: () => void }> = ({ retry }) => {
+  const navigate = useNavigate();
+  const goToHome = retry && (() => {
+    retry();
+    navigate('/');
+  });
+  return (
+    <div>
+      <h1>Something went wrong</h1>
+      {goToHome && (
+        <button type="button" onClick={goToHome}>
+          Back to Home
+        </button>
+      )}
+    </div>
+  );
+};
 
 const App: React.FC = () => (
   <BrowserRouter timeout={2000}>
     <Layout>
       <Nav />
-      <Suspense fallback={<AppLoader />}>
-        <MyRoutes />
-      </Suspense>
+      <ErrorBoundary fallback={(_err, retry) => <Fallback retry={retry} />}>
+        <Suspense fallback={<AppLoader />}>
+          <MyRoutes />
+        </Suspense>
+      </ErrorBoundary>
     </Layout>
   </BrowserRouter>
 );
