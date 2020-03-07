@@ -8861,10 +8861,10 @@ react-suspense-fetch@^0.2.1:
   resolved "https://registry.yarnpkg.com/react-suspense-fetch/-/react-suspense-fetch-0.2.1.tgz#a417a3807285a29768a4d95685ff13e9bed2a588"
   integrity sha512-qjvmvzUjnLwzQQt8ZiN4HI1mXPSMzLPugCTCV8FTMsojtG9/FcAGy6h9PSfSVZun9GiQiN/YVsqlAVb7rXicTg==
 
-react-suspense-router@^1.0.0-alpha.8:
-  version "1.0.0-alpha.8"
-  resolved "https://registry.yarnpkg.com/react-suspense-router/-/react-suspense-router-1.0.0-alpha.8.tgz#db71a651811cccd3f8e54509027838149df24f8b"
-  integrity sha512-h5dUZLEede9IWn8WdIN1KKUSLg6TuUUqSo2Aq1VNtmTGeqfbUU7C+bN2HrX91rPawGNxc8DMY6XI/1pbfXxt/w==
+react-suspense-router@^1.0.0-alpha.9:
+  version "1.0.0-alpha.9"
+  resolved "https://registry.yarnpkg.com/react-suspense-router/-/react-suspense-router-1.0.0-alpha.9.tgz#57a9365d5d4fc148d3adbbd7db3405477f052295"
+  integrity sha512-VEKI/kjTZvblgDU27ytw/ksTXNCFxIrLDPJaY6mHyAy3CBV+kMqJ6zCVepbKicqB36UTuIlGTIT3OfjiPi8jvw==
   dependencies:
     react-router "npm:@daishi/react-router@^6.0.0-alpha.2.lib.1"
     react-router-dom "^6.0.0-alpha.2"
