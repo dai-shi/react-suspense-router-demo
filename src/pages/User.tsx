@@ -1,21 +1,22 @@
 import React from "react";
 import { useRouteData, Link } from "react-suspense-router";
 
+import { useFlasher } from "../utils/useFlasher";
 import { UserData } from "./User.data";
 
 const UserID: React.FC = () => {
   const userData = useRouteData() as UserData;
-  return <li>User ID: {userData.data.id}</li>;
+  return <li ref={useFlasher()}>User ID: {userData.data.id}</li>;
 };
 
 const FirstName: React.FC = () => {
   const userData = useRouteData() as UserData;
-  return <li>First Name: {userData.data.first_name}</li>;
+  return <li ref={useFlasher()}>First Name: {userData.data.first_name}</li>;
 };
 
 const LastName: React.FC = () => {
   const userData = useRouteData() as UserData;
-  return <li>Last Name: {userData.data.last_name}</li>;
+  return <li ref={useFlasher()}>Last Name: {userData.data.last_name}</li>;
 };
 
 const User: React.FC = () => (
