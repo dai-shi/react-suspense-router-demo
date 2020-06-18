@@ -1,4 +1,4 @@
-import { match as Match } from "react-suspense-router";
+import { Match } from "react-suspense-router";
 
 export type GitHubRepoData = {
   total_count: number;
@@ -22,7 +22,7 @@ export type GitHubRepoData = {
   }[];
 };
 
-const fetchGitHubRepoData = async (match: Match<{ query: string }>) => {
+const fetchGitHubRepoData = async (match: Match) => {
   const { query } = match.params;
   const url = `https://api.github.com/search/repositories?q=${query}`;
   const response = await fetch(url);

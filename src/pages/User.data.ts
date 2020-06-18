@@ -1,4 +1,4 @@
-import { match as Match } from "react-suspense-router";
+import { Match } from "react-suspense-router";
 
 export type UserData = {
   data: {
@@ -12,7 +12,7 @@ export type UserData = {
 
 const sleep = (ms: number) => new Promise(r => setTimeout(r, ms));
 
-const fetchUserData = async (match: Match<{ uid: string }>) => {
+const fetchUserData = async (match: Match) => {
   const userId = match.params.uid;
   if (Number(userId) % 2 === 0) {
     await sleep(3000);
